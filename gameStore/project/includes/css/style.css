@@ -1,0 +1,477 @@
+body {
+    background-color: #cacaca;
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+#slider {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 7236px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 1206px;
+    height: 200px;
+}
+
+
+
+
+#nav{
+
+}
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#signupbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+#signupbtn:hover{
+    opacity: 1;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+/*.clearfix::after {*/
+    /*content: "";*/
+    /*clear: both;*/
+    /*display: table;*/
+/*}*/
+
+/*!* Change styles for cancel button and signup button on extra small screens *!*/
+/*@media screen and (max-width: 300px) {*/
+    /*.cancelbtn, .signupbtn {*/
+        /*width: 100%;*/
+    /*}*/
+/*}*/
+
+
+
+.containerall{
+    margin-left: 150px;
+    /*margin-right: 150px;*/
+    width: 90%;
+}
+
+.error{
+    color: red;
+}
+
+.posts{
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.postItems{
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.val{
+    text-align: left;
+    margin-bottom: 0px;
+    width: 150px;
+    margin-right: 150px;
+    color: white;
+}
+
+.postTitle{
+    text-align: left;
+    margin-bottom: 0px;
+    color: white;
+}
+
+#pname{
+    color: #f44336 !important;
+}
+
+.buybtn{
+    background-color: #47af67;
+    border: solid black 1px;
+    color: black;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    margin: 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#itembuy{
+    background-color: #47af67;
+    border: solid black 1px;
+    color: black;
+    width: 70%;
+    height: 40px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    margin: 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#itembuy:hover{
+darken(#47af67, 10%);
+    color: white;
+    border: solid black 2px;
+}
+
+.buybtn:hover{
+    darken(#47af67, 10%);
+    color: white;
+    border: solid black 2px;
+}
+
+.add{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#editbtn{
+    background-color: #d46a44;
+    border: solid black 1px;
+    color: black;
+    height: 40px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    margin: 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 0px;
+    text-align: center;
+}
+
+#editbtn:hover{
+    darken(#d46a44, 10%);
+    color: white;
+
+}
+
+.delbtn{
+    background: red;
+    border: solid black 1px;
+    color: black;
+    height: 40px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    margin: 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 0px;
+    text-align: center;
+}
+
+.delbtn:hover{
+    background: darken(red, 10%);
+    color: white;
+}
+
+.editlink{
+    width: 150px;
+    margin: 0px;
+}
+.editlink:hover{
+    text-decoration: none;
+
+}
+
+.buy{
+    width: 150px;
+    margin: 0px;
+}
+
+.buyk{
+    width: 150px;
+}
+
+.btns{
+    margin-left: 0px;
+}
+
+.hide{
+    text-align: left;
+}
+
+.createPost{
+}
+
+#createPost{
+    border: solid black 1px;
+    background: linear-gradient(white, #3b773b);
+    color: black;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#createPost:hover{
+    color: white;
+    background: linear-gradient(#3b773b, white);
+    border: solid black 2px;
+}
+
+.hide{
+    display: none;
+}
+
+.itemCategory{
+    margin-top: 20px;
+}
+
+.item{
+    text-align: center;
+}
+
+.valItem{
+    margin: 0px;
+}
+
+.postImg{
+    border-radius: 10px;
+
+}
+
+.postImg:hover{
+    border: solid darkblue 1px;
+    border-radius: 10px;
+
+}
+
+.search{
+    padding: 15px;
+
+}
+
+#searchBtn{
+    background-color: coral;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: none;
+    color: black;
+    height: 55px;
+    width: 100px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    padding: 0px;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#searchBtn:hover{
+    background-color: #d46a44;
+}
+
+.pagination a {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.selected {
+    margin-top: 40px;
+    background-color: #d46a44;
+    color: white;
+    border: 1px solid #d46a44;
+}
+
+#footer{
+    margin-top: 100px;
+    height: 220px;
+    background-color: black;
+    margin-left: 150px;
+    margin-right: 1px;
+    width: 100%;
+}
+
+.quantity{
+    margin: 1px !important;
+    width: 150px !important;
+}
+
+.items{
+    background-color: #111111;
+    margin: 0px 10px 10px 0px;
+    border-radius: 10px;
+}
+
+.xy{
+    width: 270px;
+}
+
+.shop{
+    margin-top: 100px;
+}
+
+.postcat{
+    padding-top: 10px;
+}
+
+.piece{
+    padding-bottom: 10px;
+}
+
+.itemk{
+    background-color: #111111;
+    border-radius: 10px;
+    padding: 10px 10px 80px 10px;
+    margin: 40px 0px 10px 10%;
+    color: #f44336;
+    width: 70%;
+}
+
+.catTable{
+    width: 100%;
+    margin: 10%;
+}
+
+.editbtns{
+    top: 50%;
+    transform: translateY(10%);
+}
+
+.sid{
+    width: 150px;
+}
+
+@media only screen and (max-width: 450px) {
+    .sid{
+        display: none;
+    }
+    .containerall {
+        margin-left: 0px;
+        width: 100%;
+    }
+    #footer{
+        margin-left: 0px;
+    }
+}
+
+.shops{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*.vonal{*/
+    /*margin-bottom: 1px;*/
+/*}*/
+
